@@ -1,0 +1,63 @@
+
+QUE ES WEBPACK?
+---------------
+
+es un empaquetador para javascript
+
+empaquetador de modulos para aplicaciones modernas
+
+
+
+
+
+
+
+
+
+USER EXPERIENCE
+(user experience produccion)
+---------------------------
+aplicacion que :
+
+* funcione
+* sea rapida
+* cumple sus necesidades
+* se actualice
+* responde a sus interacciones
+* producto de calidad
+
+
+
+
+
+DEVELOPER EXPERIENCE
+(desarrollo development experience)
+-----------------------------------
+
+* Escribir aplicaciones de manera eficiente
+* Tener un codigo limpio
+* Aplicar tecnologias para resolver sus problemas
+* Tener un conjunto de reglas y convenciones
+* Entorno de desarrollo optimizado en productividad
+
+
+
+EN RESUMEN:
+----------
+
+Cuando desarrollamos creamos un monton de archivos y tipos de archivos
+que es bueno para el desarrollador haciendo el proyecto mas entendible y
+optimizable.
+
+Pero, esta division de archivos es menos optimo a la hora de entregar
+a produccion.
+
+Webpack se encarga de:
+
++ Unir multiples archivos en uno solo
++ procesa preprocesadores
++ optimizar imagenes
++ procesa es6
+
+
+
