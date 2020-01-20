@@ -1,0 +1,57 @@
+
+instalar node
+-------------
+puedes asegurarte usando el terminal:
+node -v
+deberia salir la version del node que tienes
+lo normal es tener una version superior a 6
+
+
+creamos una carpeta 
+-------------------
+mkdir [nombre que desees]
+(no uses solo el nombre webpack)
+
+
+iniciando el proyecto
+----------------------
+npm init
+con este comando arrancamos un proyecto
+(metele los datos que quieras)
+
+se crea el archivo package.json
+
+
+en package.json
+----------------
+este es un archivo de configuracion
+dentro iran las dependencias
+las dependencias son los modulos que necesita la aplicacion 
+para que funcione.
+existen: dependencias y dev-dependencias
+
+debes tener instalado npm
+
+
+instalando webpack
+------------------
+npm install webpack --save
+con --save se guarda dentro de package.json
+es muy importante que las versiones de webpack sean
+las mismas para cada participante del proyecto.
+
+npm i -s webpack --save-exact
+
+las dependencias de tu sistemas se conocen como dependencias core
+
+
+la dependencia de desarrollo ayudan a construir el codigo del proyecto
+pero estas no se necesitan importar al proyecto paara funcionar.
+
+instalar webpack como dev-dependencies
+npm install webpack --save-dev --save-exact
+
+
+
+
+
