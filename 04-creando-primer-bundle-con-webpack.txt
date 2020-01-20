@@ -1,0 +1,69 @@
+
+
+para probar crearemos un archivo con un codigo sencillo
+
+creamos el archivo index.js
+
+index.js
+--------
+console.log("hola mundo desde webpack")
+
+
+creamos un archivo index.html
+-----------------------------
+
+...
+<script src="bundle.js">
+...
+
+webpack
+-------
+desde la version 4 webpack necesita un 
+command line interface o CLI
+
+npm i -D webpack-cli --save-exact
+
+
+webpack manipula nuestros archivos
+ademas de ser el core de nuestro sistema
+
+webpack-cli es necesario para invocar los
+comandos de webpack
+
+
+es importante mencionar que webpack no se 
+instalara de manera global
+
+esto por que podemos tener varios proyectos 
+en varias carpetas
+con versiones diferentes
+para ello usamos el flag --save a la hora de instalar 
+webpack.
+
+usando cli
+----------
+con npx llamamos a webpack de modo local
+solo en esta carpeta
+
+npx webpack -v 
+
+ahora webpack nos permitira utilizar CLI
+necesitamos una entrada(--entry) y la ruta del
+archivo
+
+tambien la salida y el nombre del archivo de salida: --output ./bundle.js
+npx webpack --entry ./index.js --output ./bundle.js
+
+el archivo resultante esta pensando para que lo interprete el cliente
+
+se necesita el modo de development o production
+npx webpack --entry ./index.js --output ./bundle.js --mode development
+
+
+
+
+
+
+
+
+

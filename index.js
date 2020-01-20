@@ -1,0 +1,1 @@
+console.log("iniciando el curso de webpack")
