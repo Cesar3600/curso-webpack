@@ -1,0 +1,34 @@
+
+CARGANDO CONFIGURACIONES POR DEFECTO Y PERSONALIZADAS
+
+cargar modulos y configuraciones PERSONALIZADAS
+
+
+external
+--------
+crear carpeta external
+dentro crear webpack.config.js
+
+ademas agregar los archivos index.js y index.html
+
+webpack.config.js
+-----------------
+const path = require('path')
+
+module.exports = {
+  entry: path:path.resolve(__dirname,'index.js'),
+  output:{
+    path:path.resolve(__dirname,'dist'),
+    filename:'bundle.js'
+  }
+}
+
+
+
+
+en package.json:
+
+"build": "webpack --entry ./index.js --output ./bundle.js --mode development",
+"build-local":"webpack --mode production",
+"build-external":"webpack --config ./external/webpack.config.js --mode development"
+
