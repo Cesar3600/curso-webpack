@@ -1,0 +1,70 @@
+INICIANDO UN WEBPACK.CONFIG
+
+el archivo de configuracion externo va servir para 
+hacer las tareas con una linea de cli bastante sencilla
+
+crear el archivo en la raiz como:
+
+webpack.config.js
+
+vamos a crear la linea anterior:
+npx webpack --entry index.js --output bundle.js
+
+
+dentro de webpack.config.js
+---------------------------
+hacemos lo mismo que hicimos con CLI
+
+utilizaremos commonJS para importar 
+
+Ademas usaremos path de node para hacer las rutas mas programaticas
+o sea es un modulo de NodeJS que va trabajar con rutas y directorios
+
+const path = require('path')
+
+
+module.exports = {
+  entry: './index.js',
+  output: {
+    path:path.resolve('output','js')
+  } 
+}
+path tiene la funcion resolve que recibira parametros un conjunto de 
+rutas que devolveran una ruta absoluta
+
+
+__dirname: se refiere a la ruta del directorio donde te encuentras
+
+module.exports = {
+  entry: './index.js',
+  output: {
+    path:path.resolve(__dirname,'dist')
+  } 
+}
+ si quieres que tu ruta final sea en otro lado puedes colocarle en el
+ segundo parametro la carpeta donde quieres 
+
+cuando se prueba con node dentro del terminal no reconocera __dirname
+por que es parte de webpack
+
+module.exports = {
+  entry: './index.js',
+  mode: 'development',
+  output: {
+    path:path.resolve(__dirname,'dist'),
+    filename: 'bundle.js
+  }
+}
+
+filename define el nombre y la ruta del archivo de salida
+
+
+En prompt:
+----------
+
+npx webpack
+
+
+
+
+
