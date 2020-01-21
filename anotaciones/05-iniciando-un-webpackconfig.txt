@@ -65,6 +65,15 @@ En prompt:
 npx webpack
 
 
+en package.json
+---------------
+Se puede cargar la ejecucion de webpack en el script de package.json
+de esta manera:
+"build":"webpack"
+no necesita "npx" por que esta corriendo de modo local
 
 
-
+en prompt:
+---------
+en el prompt se tiene que llamar la key build:
+npm run build
